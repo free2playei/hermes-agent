@@ -148,7 +148,7 @@ export function useSubmission(opts: UseSubmissionOptions) {
         })
         .catch(() => startSubmit(text, modePrefix + expand(text), showUserMessage))
     },
-    [appendMessage, composerActions, composerState.pasteSnips, gw, maybeGoodVibes, setLastUserMsg, sys]
+    [appendMessage, composerActions, composerMode, composerState.pasteSnips, gw, maybeGoodVibes, setLastUserMsg, sys]
   )
 
   const shellExec = useCallback(
